@@ -1,10 +1,20 @@
 <template>
-	<router-view />
+	<div>
+		<div class="header">
+			<BaseNavBar />
+		</div>
+		<router-view />
+	</div>
 </template>
 
 <script>
+import BaseNavBar from "./components/BaseNavBar.vue";
+
 export default {
 	name: "App",
+	components: {
+		BaseNavBar,
+	},
 };
 </script>
 
