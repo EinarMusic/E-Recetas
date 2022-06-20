@@ -8,9 +8,7 @@
                 <p>no result for your search</p>
             </div>
             <div v-else class="car-content" v-for="receta in recetas.hits" :key="receta.id">
-                <a :href="
-                    urlToGoEdamam(receta.recipe.shareAs, receta.recipe.label)
-                ">
+                <a :href="receta.recipe.shareAs">
                     <div class="img-wrap">
                         <img :src="receta.recipe.image" alt="" />
                     </div>
@@ -32,6 +30,7 @@
 </template>
 
 <script>
+
 import { mapState } from "vuex";
 
 export default {

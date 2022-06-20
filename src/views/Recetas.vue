@@ -2,6 +2,7 @@
     <div>
         <div class="wrap-all">
             <div class="left-bar">
+
                 <BaseSideBar />
             </div>
             <div class="center-content">
@@ -12,10 +13,10 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
-
 import BaseSideBar from "../components/BaseSideBar.vue";
 import BaseCard from "../components/BaseCard.vue";
+
+import { mapMutations } from "vuex";
 
 export default {
     components: {
